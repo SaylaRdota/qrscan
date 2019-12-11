@@ -1,15 +1,9 @@
 {
-	"name": "barcode-scanner",
+	"name": "qrscaner",
 	"description": "a simple, fast and useful progressive web application.",
-	"version": "3.1.0",
-	"scripts": {
-		"serve": "webpack-dev-server --hot --inline --open --mode=development",
-		"start": "node server",
-		"deploy": "npm run build && bash deploy.sh",
-		"build": "cross-env NODE_ENV=production webpack-cli --mode=production --config webpack.config.js",
-		"stats": "cross-env NODE_ENV=production webpack-cli --mode=production --profile --json > stats.json",
-		"precommit": "lint-staged",
-		"pretty": "prettier --write 'app/**/*.js'"
+	"version": "1.0.0",
+	"scripts": {		
+		"start": "node server",		
 	},
 	"lint-staged": {
 		"*.{js,css}": [
